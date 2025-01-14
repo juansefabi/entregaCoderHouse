@@ -1,0 +1,88 @@
+/* RESET DE CSS */
+*{
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+/*  Configuracion CSS del BODY */
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*  Configuracion CSS del header*/
+header{
+    position:           fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:            flex;
+    align-items:        center;
+    justify-content:    space-between;
+    padding:            10px 20px;
+    background-color:   white;
+    z-index: 1000; 
+}
+
+header img{
+    height: 73px;
+}
+
+/*  ID nav del header*/
+#navHeader{
+    display: flex;  
+    flex-grow: 1;
+    justify-content:center;
+    gap: 40px;
+}
+
+/* CLASS aHeader*/
+.aHeader{
+    color:              #4D5157;
+    text-decoration:    none;
+    font-size:          17px;
+}
+
+section {
+    padding: 20px;
+    margin: 40px 0;
+    scroll-margin-top: 70px; /* Desplaza el punto de anclaje */
+}
+
+main {
+    padding-top: 70px;
+    /*margin: 40px 0;
+    scroll-margin-top: 70px; /* Desplaza el punto de anclaje */
+}
+
+/* CSS para la seccion */
+.ImagenFullScreen{
+    height: calc(100vh - 70px); /* Ocupa toda la pantalla menos la altura del header */
+    background:url(/img/ImagenFondoInicio.png) no-repeat center center/cover;
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    color: white;
+    text-align:justify;
+    padding-top: 60px;
+}
+
+/* CSS de todos los H1*/
+h1{
+    color: #4D5157;
+    font-size: 37px;
+    text-align: center;
+}
+
+/* Estilo para las flechas del carrousel*/
+.carousel-control-prev, .carousel-control-next{
+    background-color: #4D5157;
+    opacity: 1;
+    border-radius: 50%;
+
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(1);
+
+}
