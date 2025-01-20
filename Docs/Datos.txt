@@ -1,0 +1,36 @@
+
+
+Colores:
+
+    Gris: #4D5157   
+    Verde oscuro: #2EC3AD
+    Verde claro: #B9E1DA
+    Azul oscuro: #00133D
+    Naranja: #F18200
+
+
+Fuente:
+    Poppins
+
+Textos:
+
+    Titulos:
+        size: 35
+        with: 400
+
+    Primarios:
+        size: 28
+        with: 300
+    
+    Secundarios:
+        size:
+        with:
+    
+    Terciarios:
+        size:
+        with:
+    
+    Nav:
+        size:
+        with:
+    

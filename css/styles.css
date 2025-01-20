@@ -1,3 +1,7 @@
+/*Variables*/
+
+
+
 /* RESET DE CSS */
 *{
     margin:     0;
@@ -8,63 +12,6 @@
 /*  Configuracion CSS del BODY */
 body{
     font-family: "Poppins", sans-serif;
-}
-
-/*  Configuracion CSS del header*/
-header{
-    position:           fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display:            flex;
-    align-items:        center;
-    justify-content:    space-between;
-    padding:            10px 20px;
-    background-color:   white;
-    z-index: 1000; 
-}
-
-header img{
-    height: 73px;
-}
-
-/*  ID nav del header*/
-#navHeader{
-    display: flex;  
-    flex-grow: 1;
-    justify-content:center;
-    gap: 40px;
-}
-
-/* CLASS aHeader*/
-.aHeader{
-    color:              #4D5157;
-    text-decoration:    none;
-    font-size:          17px;
-}
-
-section {
-    padding: 20px;
-    margin: 40px 0;
-    scroll-margin-top: 70px; /* Desplaza el punto de anclaje */
-}
-
-main {
-    padding-top: 70px;
-    /*margin: 40px 0;
-    scroll-margin-top: 70px; /* Desplaza el punto de anclaje */
-}
-
-/* CSS para la seccion */
-.ImagenFullScreen{
-    height: calc(100vh - 70px); /* Ocupa toda la pantalla menos la altura del header */
-    background:url(/img/ImagenFondoInicio.png) no-repeat center center/cover;
-    display: flex;
-    align-items:flex-start;
-    justify-content:center;
-    color: white;
-    text-align:justify;
-    padding-top: 60px;
 }
 
 /* CSS de todos los H1*/
@@ -85,4 +32,61 @@ h1{
 .carousel-control-prev-icon, .carousel-control-next-icon{
     filter: invert(1);
 
+}
+
+/* css para container de texto e imagen*/
+.container_1_texto_imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    flex-grow: 1;
+    background-color:  white ;
+    /*border: 12px solid #ddd;*/
+}
+
+@media (min-width : 768px){
+    .container_1_texto_imagen{
+        flex-direction: row;
+    }
+}
+
+.caja_1{
+    flex: 1;
+    align-content: center;
+    text-align: center;
+    
+    margin: 5px;
+    background-color: white;
+}
+
+.caja_1 h1{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.caja_1 h2{
+    font-size: 19px;
+    font-weight: 300;
+}
+.texto_1 {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+}
+
+
+.imagen_1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fce4ec;
+}
+.imagen_1 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }

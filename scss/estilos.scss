@@ -1,3 +1,97 @@
-h1{
-    color: red;
+/*  Variables   */
+
+    /*  Colores */
+$colorGris: #4D5157; 
+
+    /*  Tamaño de textos */
+$sizeLarge: 35px;
+
+/* RESET DE CSS */
+*{
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+/*  Configuracion CSS del BODY */
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo para las flechas del carrousel*/
+.carousel-control-prev, .carousel-control-next{
+    background-color: $colorGris;
+    opacity: 1;
+    border-radius: 50%;
+
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(1);
+
+}
+
+/* Estilo para el texto del carrousel*/
+.carousel-fixed-text {
+    position: absolute;
+    top: 10%; /* Margen superior del 10% */
+    width: 100%; /* Ocupa todo el ancho */
+    color: $colorGris;
+    /* background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    padding: 10px 0; /* Espaciado interno */
+    z-index: 10; /* Asegura que esté por encima de las imágenes */
+    text-align: center;
+  }
+
+  .carousel-fixed-text{
+    h2{
+        font-size: $sizeLarge;
+    }
+  }
+
+/* css para container de texto e imagen*/
+.container_1_texto_imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    flex-grow: 1;
+    background-color:  white ;
+    border: 5px solid white;
+}
+
+@media (min-width : 768px){
+    .container_1_texto_imagen{
+        flex-direction: row;
+    }
+}
+
+.caja_1{
+    flex: 1;
+    align-content: center;
+    text-align: center;
+    
+    margin: 20px;
+    background-color: white;
+}
+
+.caja_1 h1{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.caja_1 h2{
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.caja_1 h2 strong {
+    font-weight: bold;
+}
+
+.caja_1 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
